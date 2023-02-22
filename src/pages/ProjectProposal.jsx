@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import ProposalCard from "../UIElements/ProposalCard";
+import ProposalCard from "../components/UIElements/ProposalCard";
 
 const ProjectProposal = () => {
   const ProposalV1Ref = useRef();

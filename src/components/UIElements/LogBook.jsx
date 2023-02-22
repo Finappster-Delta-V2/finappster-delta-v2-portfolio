@@ -5,7 +5,7 @@ const LogBook = forwardRef((props, ref) => {
   const { link = "https://github.com", name } = props;
 
   return (
-    <div className="my-10 flex items-center gap-4" ref={ref}>
+    <div className="my-10 flex items-center gap-4 opacity-0" ref={ref}>
       <a
         className="text-sky-300 transition-transform duration-300 ease-in-out hover:scale-125"
         href="https://github.com"

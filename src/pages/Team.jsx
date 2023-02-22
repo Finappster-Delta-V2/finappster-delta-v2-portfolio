@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import Card from "../UIElements/Card";
+import Card from "../components/UIElements/Card";
 
 const animTypes = ["fade-left", "fade-top", "fade-bottom", "fade-right"];
 
@@ -42,7 +42,7 @@ const Third = () => {
         className="flex h-[90vh] items-center justify-center"
         ref={teamWrapperRef}
       >
-        <div className="flex content-center items-center justify-center px-12 pt-7">
+        <div className="flex content-center items-center justify-center gap-24 px-12 pt-7">
           <Card
             occupation="developer"
             name="Peter An"

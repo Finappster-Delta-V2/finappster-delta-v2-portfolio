@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import LogBook from "../UIElements/LogBook";
+import LogBook from "../components/UIElements/LogBook";
 
 const LogBooks = () => {
   const peterLogRef = useRef();
@@ -11,7 +11,16 @@ const LogBooks = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("fade-left");
+          peterLogRef.current.classList.add("fade-left");
+          setTimeout(() => {
+            jamesonLogRef.current.classList.add("fade-left");
+          }, 100);
+          setTimeout(() => {
+            chrisLogRef.current.classList.add("fade-left");
+          }, 200);
+          setTimeout(() => {
+            renjoLogRef.current.classList.add("fade-left");
+          }, 300);
         } else {
           entry.target.classList.remove("fade-left");
         }
@@ -34,7 +43,7 @@ const LogBooks = () => {
       </div>
 
       <div className="mt-8 flex items-center justify-center">
-        <div className="grid grid-cols-2 gap-12">
+        <div className="grid grid-cols-2 gap-y-12 gap-x-32">
           <LogBook name="Peter An" ref={peterLogRef} />
           <LogBook name="Jameson Yeo" ref={jamesonLogRef} />
           <LogBook name="Christopher Li" ref={chrisLogRef} />
