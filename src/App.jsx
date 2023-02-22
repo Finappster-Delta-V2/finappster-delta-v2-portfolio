@@ -1,15 +1,16 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
-import Team from "./components/Team";
-import LogBook from "./components/LogBooks";
-import Home from "./components/Home";
-import Meetings from "./components/Meetings";
-import Poster from "./components/Poster";
-import ProjectProposal from "./components/ProjectProposal";
-import MidProject from "./components/MidProject";
-import ClientFeedBack from "./components/ClientFeedBack";
-import Documents from "./components/Documents";
-import Navbar from "./components/NavBar";
+
+import Team from "./components/Layout/Team";
+import LogBooks from "./components/Layout/LogBooks";
+import Home from "./components/Layout/Home";
+import Meetings from "./components/Layout/Meetings";
+import Poster from "./components/Layout/Poster";
+import ProjectProposal from "./components/Layout/ProjectProposal";
+import MidProject from "./components/Layout/MidProject";
+import ClientFeedBack from "./components/Layout/ClientFeedBack";
+import Documents from "./components/Layout/Documents";
+import Navbar from "./components/UIElements/NavBar";
 
 import "./index.css";
 
@@ -42,27 +43,27 @@ const App = () => (
       ]}
       showActiveTooltip={true}
       onLeave={(origin, destination, direction) => {
-        console.log("onLeave event", {
-          origin,
-          destination,
-          direction,
-        });
+        // console.log("onLeave event", {
+        //   origin,
+        //   destination,
+        //   direction,
+        // });
       }}
       render={({ state, fullpageApi }) => {
-        console.log("render prop change", state, fullpageApi);
+        // console.log("render prop change", state, fullpageApi);
 
         return (
-          <div>
+          <>
             <Home />
             <Team />
-            <LogBook />
+            <LogBooks />
             <Meetings />
             <ProjectProposal />
             <Poster />
             <MidProject />
             <ClientFeedBack />
             <Documents />
-          </div>
+          </>
         );
       }}
     />

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Fontspring-DEMO-proximanovacond", "sans-serif"],
+        sans: ["Kanit", "sans-serif"],
       },
     },
   },

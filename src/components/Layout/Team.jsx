@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import Card from "./Card/Card";
+import Card from "../UIElements/Card";
 
 const animTypes = ["fade-left", "fade-top", "fade-bottom", "fade-right"];
 
@@ -28,9 +28,7 @@ const Third = () => {
       });
     });
 
-    if (teamWrapperRef.current) {
-      observer.observe(teamWrapperRef.current);
-    }
+    observer.observe(teamWrapperRef.current);
 
     // Clean up function to disconnect the observer when the component unmounts
     return () => {
@@ -41,7 +39,7 @@ const Third = () => {
   return (
     <div className="section" data-anchor="page2">
       <div
-        className="team-wrapper flex items-center justify-center"
+        className="flex h-[90vh] items-center justify-center"
         ref={teamWrapperRef}
       >
         <div className="flex content-center items-center justify-center px-12 pt-7">
@@ -49,25 +47,25 @@ const Third = () => {
             occupation="developer"
             name="Peter An"
             imagePath="/assets/image/peter.jpg"
-            cardRef={peterCardRef}
+            ref={peterCardRef}
           />
           <Card
             occupation="developer"
             name="Jameson Yeo"
             imagePath="/assets/image/jameson.jpg"
-            cardRef={jamesonCardRef}
+            ref={jamesonCardRef}
           />
           <Card
             occupation="developer"
             name="Christopher Li"
             imagePath="/assets/image/chris.jpg"
-            cardRef={chrisCardRef}
+            ref={chrisCardRef}
           />
           <Card
             occupation="developer"
             name="Renjo Angeles"
             imagePath="/assets/image/renjo.jpg"
-            cardRef={renjoCardRef}
+            ref={renjoCardRef}
           />
         </div>
       </div>
