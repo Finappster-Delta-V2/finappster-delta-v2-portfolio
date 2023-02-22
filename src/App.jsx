@@ -1,6 +1,5 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
-import "./index.css";
 import Team from "./components/Team";
 import LogBook from "./components/LogBooks";
 import Home from "./components/Home";
@@ -11,6 +10,8 @@ import MidProject from "./components/MidProject";
 import ClientFeedBack from "./components/ClientFeedBack";
 import Documents from "./components/Documents";
 import Navbar from "./components/NavBar";
+
+import "./index.css";
 
 const App = () => (
   <div>
