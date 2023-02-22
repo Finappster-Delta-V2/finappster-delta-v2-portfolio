@@ -666,6 +666,7 @@ h1 {
   top: 50%;
   transform: translate(0%, -50%);
   user-select: none;
+  width: max-content;
   /* -- Prevent image highlighting -- */
 }
 
