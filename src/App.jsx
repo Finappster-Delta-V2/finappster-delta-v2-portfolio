@@ -22,7 +22,7 @@ const App = () => (
       navigation={true}
       sectionsColor={[
         "#111111",
-        "#333333",
+        "#323232",
         "#555555",
         "#111111",
         "#333333",
@@ -42,8 +42,8 @@ const App = () => (
         "ClientFeedBack",
         "Other Documents",
       ]}
-      scrollingSpeed={500}
       showActiveTooltip={true}
+      scrollingSpeed={500}
       onLeave={(origin, destination, direction) => {
         // console.log("onLeave event", {
         //   origin,

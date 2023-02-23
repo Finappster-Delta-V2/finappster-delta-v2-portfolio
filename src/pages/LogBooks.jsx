@@ -42,7 +42,7 @@ const LogBooks = () => {
         <h1 className="text-8xl text-white">Log Books</h1>
       </div>
 
-      <div className="mt-8 flex items-center justify-center">
+      <div className="mt-12 flex items-center justify-center">
         <div className="grid grid-cols-2 gap-y-12 gap-x-32">
           <LogBook name="Peter An" ref={peterLogRef} />
           <LogBook name="Jameson Yeo" ref={jamesonLogRef} />

@@ -1,27 +1,31 @@
+import { useState } from "react";
+
 const useHorizontalScroll = (ref) => {
+  const [mouseDownAt, setMouseDownAt] = useState(0);
+  const [prevPercentage, setPrevPercentage] = useState(0);
+  const [percentage, setPercentage] = useState(0);
+
+
   const handleOnDown = (e) => {
-    ref.current.dataset.mouseDownAt = e.clientX;
+    setMouseDownAt(e.clientX);
   };
 
   const handleOnUp = () => {
-    ref.current.dataset.mouseDownAt = "0";
-    ref.current.dataset.prevPercentage =
-      ref.current.dataset.percentage;
+    setMouseDownAt(0);
+    setPrevPercentage(percentage);
   };
 
   const handleOnMove = (e) => {
-    if (ref.current.dataset.mouseDownAt === "0") return;
+    if (mouseDownAt === 0) return;
 
-    const mouseDelta =
-      parseFloat(ref.current.dataset.mouseDownAt) - e.clientX,
-      maxDelta = window.innerWidth / 2;
+    const mouseDelta = parseFloat(mouseDownAt) - e.clientX;
+    const maxDelta = window.innerWidth / 2;
 
-    const percentage = (mouseDelta / maxDelta) * -100,
-      nextPercentageUnconstrained =
-        parseFloat(ref.current.dataset.prevPercentage) + percentage,
-      nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+    const percentage = (mouseDelta / maxDelta) * -100;
+    const nextPercentageUnconstrained = parseFloat(prevPercentage) + percentage;
+    const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
 
-    ref.current.dataset.percentage = nextPercentage;
+    setPercentage(nextPercentage);
 
     ref.current.animate(
       {
@@ -30,7 +34,7 @@ const useHorizontalScroll = (ref) => {
       {
         duration: 1200,
         fill: "forwards",
-      }
+      },
     );
 
     const images = ref.current.querySelectorAll(".image");

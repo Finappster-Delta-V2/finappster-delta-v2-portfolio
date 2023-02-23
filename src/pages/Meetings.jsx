@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRef } from "react";
 import MeetingImage from "../components/UIElements/MeetingImage";
 import useHorizontalScroll from "../utils/useHorizontalScroll";
