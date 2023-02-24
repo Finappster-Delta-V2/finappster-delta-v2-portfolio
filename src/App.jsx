@@ -53,7 +53,6 @@ const App = () => (
       }}
       render={({ state, fullpageApi }) => {
         // console.log("render prop change", state, fullpageApi);
-
         return (
           <>
             <Home />
