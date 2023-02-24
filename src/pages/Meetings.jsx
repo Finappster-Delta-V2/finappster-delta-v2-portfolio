@@ -15,9 +15,12 @@ const imagePaths = [
 
 const Meetings = () => {
   const trackRef = useRef();
+  const itemsRef = useRef([]);
 
-  const { handleOnDown, handleOnUp, handleOnMove } =
-    useHorizontalScroll(trackRef);
+  const { handleOnDown, handleOnUp, handleOnMove } = useHorizontalScroll(
+    trackRef,
+    itemsRef
+  );
 
   return (
     <div className="section" data-anchor="page4">
@@ -50,7 +53,12 @@ const Meetings = () => {
         onMouseLeave={handleOnUp}
       >
         {imagePaths.map((imagePath, index) => (
-          <MeetingImage key={imagePath} imagePath={imagePath} alt={index} />
+          <MeetingImage
+            key={imagePath}
+            imagePath={imagePath}
+            alt={index}
+            ref={(imageRef) => (itemsRef.current[index] = imageRef)}
+          />
         ))}
       </div>
     </div>

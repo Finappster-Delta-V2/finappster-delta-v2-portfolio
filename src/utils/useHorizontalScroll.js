@@ -1,10 +1,9 @@
 import { useState } from "react";
 
-const useHorizontalScroll = (ref) => {
+const useHorizontalScroll = (parentRef, childRef) => {
   const [mouseDownAt, setMouseDownAt] = useState(0);
   const [prevPercentage, setPrevPercentage] = useState(0);
   const [percentage, setPercentage] = useState(0);
-
 
   const handleOnDown = (e) => {
     setMouseDownAt(e.clientX);
@@ -23,21 +22,24 @@ const useHorizontalScroll = (ref) => {
 
     const percentage = (mouseDelta / maxDelta) * -100;
     const nextPercentageUnconstrained = parseFloat(prevPercentage) + percentage;
-    const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+    const nextPercentage = Math.max(
+      Math.min(nextPercentageUnconstrained, 0),
+      -100
+    );
 
     setPercentage(nextPercentage);
 
-    ref.current.animate(
+    parentRef.current.animate(
       {
         transform: `translate(${nextPercentage}%, -50%)`,
       },
       {
         duration: 1200,
         fill: "forwards",
-      },
+      }
     );
 
-    const images = ref.current.querySelectorAll(".image");
+    const images = childRef.current;
     for (const image of images) {
       image.animate(
         {
@@ -56,6 +58,6 @@ const useHorizontalScroll = (ref) => {
     handleOnUp,
     handleOnMove,
   };
-}
+};
 
 export default useHorizontalScroll;
