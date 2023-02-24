@@ -23,6 +23,7 @@ const ProjectProposal = () => {
       <div className="mt-24 flex items-center justify-center gap-12">
         {proposals.map((proposal, index) => (
           <ProposalCard
+            key={proposal.name}
             name={proposal.name}
             link={proposal.link}
             ref={(newRef) => (proposalRefs.current[index] = newRef)}
