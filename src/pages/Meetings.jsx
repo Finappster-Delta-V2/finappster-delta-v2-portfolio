@@ -40,7 +40,7 @@ const Meetings = () => {
         data-prev-percentage="0"
         ref={trackRef}
         // @todo plz change this css (NO TRANSATION PLEASE!!!)
-        className="absolute top-1/2 left-1/2 flex w-max translate-y-[-50%] select-none gap-10"
+        className="absolute top-1/2 left-1/2 flex w-max translate-y-[-50%] select-none gap-10 bg-black"
         onMouseDown={handleOnDown}
         onMouseUp={handleOnUp}
         onMouseMove={handleOnMove}
