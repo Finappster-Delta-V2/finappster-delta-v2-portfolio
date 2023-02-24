@@ -1,30 +1,19 @@
-import React, { useEffect, useRef } from "react";
+import { useRef } from "react";
 import ProposalCard from "../components/UIElements/ProposalCard";
+import useIntersectionAnimation from "../utils/useIntersectionAnimation";
+
+const proposals = [
+  { name: "Proposal v1", link: "", animation: "fade-top" },
+  { name: "Proposal v2", link: "", animation: "fade-top" },
+  { name: "Proposal v3", link: "", animation: "fade-top" },
+];
+
+const proposalAnimations = proposals.map((proposal) => proposal.animation);
 
 const ProjectProposal = () => {
-  const ProposalV1Ref = useRef();
-  const ProposalV2Ref = useRef();
-  const ProposalV3Ref = useRef();
+  const proposalRefs = useRef([]);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("fade-top");
-        } else {
-          entry.target.classList.remove("fade-top");
-        }
-      });
-    });
-
-    observer.observe(ProposalV1Ref.current);
-    observer.observe(ProposalV2Ref.current);
-    observer.observe(ProposalV3Ref.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  useIntersectionAnimation(proposalRefs, proposalAnimations, 100);
 
   return (
     <div className="section" data-anchor="page5">
@@ -32,21 +21,13 @@ const ProjectProposal = () => {
         Project Proposals
       </div>
       <div className="mt-24 flex items-center justify-center gap-12">
-        <ProposalCard
-          name="Proposal v1"
-          link="https://drive.google.com"
-          ref={ProposalV1Ref}
-        />
-        <ProposalCard
-          name="Proposal v2"
-          link="https://drive.google.com"
-          ref={ProposalV2Ref}
-        />
-        <ProposalCard
-          name="Proposal v3"
-          link="https://drive.google.com"
-          ref={ProposalV3Ref}
-        />
+        {proposals.map((proposal, index) => (
+          <ProposalCard
+            name={proposal.name}
+            link={proposal.link}
+            ref={(newRef) => (proposalRefs.current[index] = newRef)}
+          />
+        ))}
       </div>
     </div>
   );

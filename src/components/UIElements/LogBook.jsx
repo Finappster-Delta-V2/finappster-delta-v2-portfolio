@@ -12,7 +12,7 @@ const LogBook = forwardRef((props, ref) => {
       <div className="text-4xl font-light text-white">{name}</div>
       <a
         className="rounded-full bg-gray-700 p-3 text-white outline outline-1 outline-offset-4 outline-white transition-transform duration-300 ease-in-out hover:scale-125"
-        href="https://github.com"
+        href={link}
       >
         <BsFileEarmarkWord size={size} />
       </a>

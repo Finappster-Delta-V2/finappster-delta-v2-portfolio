@@ -7,7 +7,7 @@ const Card = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="flex flex-col items-center justify-center rounded-md bg-gradient-to-tl from-gray-900 to-black p-12 text-white outline outline-1 transition-transform duration-200 ease-in-out"
+      className="flex flex-col items-center justify-center rounded-md bg-gradient-to-tl from-gray-900 to-black p-12 text-white opacity-0 outline outline-1 transition-transform duration-200 ease-in-out"
     >
       <div className="overflow-hidden rounded-full outline outline-1 outline-offset-4 ">
         <img src={imagePath} alt="" height="150rem" width="150rem" />
