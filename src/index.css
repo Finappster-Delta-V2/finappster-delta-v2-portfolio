@@ -27,24 +27,6 @@
   }
 }
 
-/* NavBar */
-
-.navbar-icons {
-  size: 200px;
-  padding-right: 40px;
-  padding-left: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: whitesmoke !important;
-}
-
-.navbar-icons.active {
-  transform: scale(1.5);
-  transform-origin: center;
-  transition: transform 0.3s ease-in-out;
-}
-
 .fade-left {
   -webkit-animation: fade-left 2.2s both;
   /* Safari 4+ */
