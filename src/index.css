@@ -6,6 +6,12 @@
   height: 100vh;
 }
 
+/* Jank Select to make nav white */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: white !important;
+}
+
 /*Home*/
 .bounce {
   animation-name: bounce;
