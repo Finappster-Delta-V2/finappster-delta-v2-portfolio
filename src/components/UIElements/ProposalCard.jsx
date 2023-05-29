@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import { AiOutlineFilePdf } from "react-icons/ai";
 
 const ProposalCard = forwardRef((props, ref) => {
-  const { name, link = "https://drive.google.com", size = 100 } = props;
+  const { name, link = "https://drive.google.com", size = 300 } = props;
 
   return (
     <div
