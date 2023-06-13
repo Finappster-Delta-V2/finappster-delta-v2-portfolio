@@ -1,46 +1,49 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed z-10 w-full bg-cyan-200">
+    <nav className="fixed z-10 w-full bg-primary-600">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="text-2xl font-semibold text-black">Delta V2</div>
+          <NavLink to="/">
+            <div className="text-2xl font-semibold text-black">Delta V2</div>
+          </NavLink>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a
-                href="#"
+              <NavLink
+                to="/proposal"
                 className="rounded-md px-3 py-2 text-sm font-medium text-black hover:text-white"
               >
                 Proposal
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to="/planning"
                 className="rounded-md px-3 py-2 text-sm font-medium text-black hover:text-white"
               >
                 Planning/Control
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to="/research"
                 className="rounded-md px-3 py-2 text-sm font-medium text-black hover:text-white"
               >
                 Research/Upskilling
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to="/teamwork"
                 className="rounded-md px-3 py-2 text-sm font-medium text-black hover:text-white"
               >
-                TeamWork/Communcations
-              </a>
-              <a
-                href="#"
+                Teamwork/Communcations
+              </NavLink>
+              <NavLink
+                to="/dev"
                 className="rounded-md px-3 py-2 text-sm font-medium text-black hover:text-white"
               >
                 Dev Activites/QA
-              </a>
+              </NavLink>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
