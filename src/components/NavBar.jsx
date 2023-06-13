@@ -8,7 +8,7 @@ const NavBar = () => {
     <nav className="fixed z-10 w-full bg-cyan-200">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="text-2xl font-semibold text-black">Logo</div>
+          <div className="text-2xl font-semibold text-black">Delta V2</div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <a
