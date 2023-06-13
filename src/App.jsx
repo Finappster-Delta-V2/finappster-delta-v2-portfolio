@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import Home from "./pages/Home";
-import { NavBar } from "./components/NavBar";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
