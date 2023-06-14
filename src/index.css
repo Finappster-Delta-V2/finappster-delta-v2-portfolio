@@ -8,15 +8,12 @@
 
 @keyframes color-change {
   0% {
-    background-color: #569f7a;
+    background-color: #7abb9b;
   }
-  33% {
+  50% {
     background-color: #aae3c6;
   }
-  66% {
-    background-color: #b5edf8;
-  }
   100% {
-    background-color: #569f7a;
+    background-color: #7abb9b;
   }
 }

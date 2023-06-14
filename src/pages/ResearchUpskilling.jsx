@@ -1,4 +1,4 @@
-import { DocumentCard } from "../components/DocumentCard";
+import { DocumentIcon } from "../components/DocumentIcon";
 
 export const ResearchUpskilling = () => {
   const documents = [
@@ -54,7 +54,7 @@ export const ResearchUpskilling = () => {
       <h1 className="mt-20 text-center text-3xl text-black">Container 1</h1>
       <div className="flex h-fit w-3/4 place-content-between rounded bg-primary-500 p-8">
         {documents.slice(0, 3).map((document) => (
-          <DocumentCard
+          <DocumentIcon
             key={document.id}
             title={document.title}
             url={document.url}
@@ -65,7 +65,7 @@ export const ResearchUpskilling = () => {
 
       <div className="flex h-fit w-3/4 place-content-between rounded  bg-primary-500 p-8">
         {documents.slice(3, 6).map((document) => (
-          <DocumentCard
+          <DocumentIcon
             key={document.id}
             title={document.title}
             url={document.url}
@@ -76,7 +76,7 @@ export const ResearchUpskilling = () => {
 
       <div className="flex h-fit w-3/4 place-content-between rounded bg-primary-500 p-8">
         {documents.slice(6, 9).map((document) => (
-          <DocumentCard
+          <DocumentIcon
             key={document.id}
             title={document.title}
             url={document.url}
