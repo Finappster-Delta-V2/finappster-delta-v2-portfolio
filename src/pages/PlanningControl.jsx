@@ -43,8 +43,21 @@ const folders = [
   },
 ];
 
-const DocumentCard = ({}) => {
-  return <div>hello</div>;
+const DocumentCard = ({ title, description, subHeading, imageUrl }) => {
+  return (
+    <div className="w=[40rem] overflow-hidden rounded-3xl bg-slate-400 shadow-md">
+      <img
+        className=" h-24 w-full object-cover object-top"
+        src="/public/assets/image/documents/planning-control/MOSCOW.png"
+        alt=""
+      />
+      <div className="p-4">
+        <h1>MOSCOW</h1>
+        <h3>Must have Should have Could have Will not have</h3>
+        <p>Created at: 10/06/2023</p>
+      </div>
+    </div>
+  );
 };
 
 export const PlanningControl = () => {
@@ -60,8 +73,8 @@ export const PlanningControl = () => {
       </div>
 
       {/* Documents */}
-      <div>
-        <DocumentCard />
+      <div className=" mt-24">
+        <DocumentCard title="MOSCOW" />
       </div>
     </div>
   );
