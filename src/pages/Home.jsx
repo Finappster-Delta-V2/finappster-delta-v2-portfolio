@@ -52,7 +52,7 @@ export const Home = () => {
           </h1>
           <div className="h-96 w-96 overflow-hidden rounded-full object-cover drop-shadow-2xl">
             <img
-              className="h-full w-full"
+              className="h-full w-full object-cover"
               src="/public/assets/image/team-photo.png"
               alt="Image 1"
             />
