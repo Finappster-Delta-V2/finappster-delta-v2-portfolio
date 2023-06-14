@@ -6,7 +6,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed sticky z-10 w-full bg-primary-600">
+    <nav className="fixed z-10 w-full bg-primary-600 shadow-md">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <NavLink to="/">

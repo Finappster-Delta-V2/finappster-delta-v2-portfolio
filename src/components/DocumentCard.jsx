@@ -7,7 +7,7 @@ export const DocumentCard = ({ title, url }) => {
       <a href={url} target="_blank">
         <AiOutlineFile size={80} />
       </a>
-      <h3 className="mt-4 text-center">{title}</h3>
+      <h3 className="text-center">{title}</h3>
     </div>
   );
 };

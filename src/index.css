@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dynamic-bg {
+  animation: 10000ms ease-in-out infinite color-change;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #569f7a;
+  }
+  33% {
+    background-color: #aae3c6;
+  }
+  66% {
+    background-color: #b5edf8;
+  }
+  100% {
+    background-color: #569f7a;
+  }
+}

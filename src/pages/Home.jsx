@@ -50,9 +50,9 @@ export const Home = () => {
             Delta V2 <br />
             <p className="mt-6 ml-4 text-2xl">2022-2023</p>
           </h1>
-          <div className="h-96 w-96 overflow-hidden rounded-full object-cover drop-shadow-2xl">
+          <div className="relative flex h-[30rem] w-[30rem] items-center justify-center overflow-hidden rounded-full object-cover drop-shadow-2xl">
             <img
-              className="h-full w-full object-cover"
+              className="h-full object-cover"
               src="/public/assets/image/team-photo.png"
               alt="Image 1"
             />

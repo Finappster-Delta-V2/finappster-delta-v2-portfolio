@@ -23,9 +23,9 @@ export const TeamCard = ({
   return (
     <motion.div
       className="flex flex-col items-center justify-center rounded-md bg-white p-12 outline outline-1 outline-white"
-      // variants={card}
       initial={{ opacity: 0, x: "-50%" }}
-      animate={{ opacity: 1, x: "0" }}
+      whileInView={{ opacity: 1, x: "0" }}
+      viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 1, delay: delay }}
     >
       <div className="overflow-hidden rounded-full outline outline-1 outline-offset-4 outline-white">
