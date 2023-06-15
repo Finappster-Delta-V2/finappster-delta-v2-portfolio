@@ -81,8 +81,8 @@ const otherQADocuments = [
 
 export const DevActivityQA = () => {
   return (
-    <div className="flex h-screen flex-col items-center ">
-      <h1 className="my-8 mb-12 text-4xl font-bold">Planning and Control</h1>
+    <div className="flex h-screen flex-col items-center">
+      <h1 className="mt-20 mb-14 text-4xl font-bold">Planning and Control</h1>
       {/* Folders */}
       <div className="grid grid-cols-4 gap-4">
         {folders.map((folder) => (
@@ -90,8 +90,8 @@ export const DevActivityQA = () => {
         ))}
       </div>
       {/* Documents */}
-      <h3 className="my-8 text-center text-3xl font-bold">Other Documents</h3>
-      <div className="grid grid-cols-5 gap-20 bg-primary-500 p-8">
+      <h3 className=" my-20 text-center text-4xl font-bold">Other Documents</h3>
+      <div className="mb-8 grid grid-cols-5 gap-20">
         {otherQADocuments.map((otherQADocuments) => (
           <DocumentCard
             title={otherQADocuments.title}

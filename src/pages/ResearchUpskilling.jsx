@@ -48,40 +48,33 @@ export const ResearchUpskilling = () => {
       url: "https://example.com/document9.pdf",
     },
   ];
+  const renderDocumentCards = (startIndex, endIndex) => {
+    return documents
+      .slice(startIndex, endIndex)
+      .map((document) => (
+        <DocumentCard
+          key={document.id}
+          title={document.title}
+          url={document.url}
+        />
+      ));
+  };
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center gap-8">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-8 overflow-auto">
       <h1 className="mt-20 text-center text-3xl text-black">Container 1</h1>
       <div className="flex h-fit w-3/4 place-content-between rounded bg-primary-500 p-8">
-        {documents.slice(0, 3).map((document) => (
-          <DocumentCard
-            key={document.id}
-            title={document.title}
-            url={document.url}
-          />
-        ))}
+        {renderDocumentCards(0, 3)}
       </div>
       <h1 className="text-center text-3xl text-black">Zeta</h1>
 
-      <div className="flex h-fit w-3/4 place-content-between rounded  bg-primary-500 p-8">
-        {documents.slice(3, 6).map((document) => (
-          <DocumentCard
-            key={document.id}
-            title={document.title}
-            url={document.url}
-          />
-        ))}
+      <div className="flex h-fit w-3/4 place-content-between rounded bg-primary-500 p-8">
+        {renderDocumentCards(0, 3)}
       </div>
       <h1 className="text-center text-3xl text-black">Something</h1>
 
       <div className="flex h-fit w-3/4 place-content-between rounded bg-primary-500 p-8">
-        {documents.slice(6, 9).map((document) => (
-          <DocumentCard
-            key={document.id}
-            title={document.title}
-            url={document.url}
-          />
-        ))}
+        {renderDocumentCards(0, 3)}
       </div>
     </div>
   );
