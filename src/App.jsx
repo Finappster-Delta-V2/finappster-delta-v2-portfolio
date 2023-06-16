@@ -12,7 +12,7 @@ const App = () => {
 
       {/* Intro Section */}
       <div className="flex h-screen items-center justify-between">
-        <div className="w-[40rem]">
+        <div className="w-1/2">
           <h1 className="mb-2 text-3xl font-bold">finappster</h1>
           <h1 className="text-8xl font-bold">Delta v2</h1>
           <h2 className="text-3xl font-bold">
@@ -26,7 +26,7 @@ const App = () => {
         </div>
 
         <img
-          className="w-[40rem]"
+          className="w-1/2"
           src="/public/assets/image/team-photo.png"
           alt="Delta v2 team photo"
         />
