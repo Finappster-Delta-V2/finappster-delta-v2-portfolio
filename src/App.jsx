@@ -107,10 +107,12 @@ const App = () => {
                   alt="Peter An"
                 />
               </div>
-              <h1 className="text-4xl font-bold">Peter</h1>
-              <h3 className="text-md font-light tracking-widest text-primary">
-                S T U D E N T
-              </h3>
+              <div className="my-5">
+                <h1 className="text-4xl font-bold">Peter An</h1>
+                <h3 className="text-md text-center font-light tracking-widest text-primary">
+                  S T U D E N T
+                </h3>
+              </div>
               <p>
                 I am a software development student with a passion for exploring
                 with the latest bleeding edge technologies. My favorite language
@@ -121,7 +123,7 @@ const App = () => {
                 with the intention of contributing to the Turbopack bundler, an
                 open source software developed by Vercel.
               </p>
-              <h6 className="self-end text-gray-400">16/06/2023</h6>
+              <h6 className="mt-4 self-end text-gray-400">16/06/2023</h6>
             </div>
 
             {/* Christopher */}
@@ -133,10 +135,12 @@ const App = () => {
                   alt="Christopher Li"
                 />
               </div>
-              <h1 className="text-4xl font-bold">Christopher Li</h1>
-              <h3 className="text-md font-light tracking-widest text-primary">
-                S T U D E N T
-              </h3>
+              <div className="my-5">
+                <h1 className="text-4xl font-bold">Christopher Li</h1>
+                <h3 className="text-md text-center font-light tracking-widest text-primary">
+                  S T U D E N T
+                </h3>
+              </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Sed amet mauris arcu in.
                 Nam nisl porttitor id diam id dolor mauris cursus faucibus. Enim
@@ -146,7 +150,7 @@ const App = () => {
                 lacus eu. Risus posuere lectus magna sed eu dictum consequat
                 velit. Vestibulum magna id est sollicitudin
               </p>
-              <h6 className="self-end text-gray-400">16/06/2023</h6>
+              <h6 className="mt-4 self-end text-gray-400">16/06/2023</h6>
             </div>
 
             {/* Renjo */}
@@ -158,10 +162,12 @@ const App = () => {
                   alt="Renjo Angeles"
                 />
               </div>
-              <h1 className="text-4xl font-bold">Renjo Angeles</h1>
-              <h3 className="text-md font-light tracking-widest text-primary">
-                S T U D E N T
-              </h3>
+              <div className="my-5">
+                <h1 className="text-4xl font-bold">Renjo Angeles</h1>
+                <h3 className="text-md text-center font-light tracking-widest text-primary">
+                  S T U D E N T
+                </h3>
+              </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Sed amet mauris arcu in.
                 Nam nisl porttitor id diam id dolor mauris cursus faucibus. Enim
@@ -171,7 +177,7 @@ const App = () => {
                 lacus eu. Risus posuere lectus magna sed eu dictum consequat
                 velit. Vestibulum magna id est sollicitudin
               </p>
-              <h6 className="self-end text-gray-400">16/06/2023</h6>
+              <h6 className="mt-4 self-end text-gray-400">16/06/2023</h6>
             </div>
 
             {/* Jameson */}
@@ -183,10 +189,12 @@ const App = () => {
                   alt="Jameson Yeo"
                 />
               </div>
-              <h1 className="text-4xl font-bold">Jameson Yeo</h1>
-              <h3 className="text-md font-light tracking-widest text-primary">
-                S T U D E N T
-              </h3>
+              <div className="my-5">
+                <h1 className="text-4xl font-bold">Jameson Yeo</h1>
+                <h3 className="text-md text-center font-light tracking-widest text-primary">
+                  S T U D E N T
+                </h3>
+              </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Sed amet mauris arcu in.
                 Nam nisl porttitor id diam id dolor mauris cursus faucibus. Enim
@@ -196,7 +204,7 @@ const App = () => {
                 lacus eu. Risus posuere lectus magna sed eu dictum consequat
                 velit. Vestibulum magna id est sollicitudin
               </p>
-              <h6 className="self-end text-gray-400">16/06/2023</h6>
+              <h6 className="mt-4 self-end text-gray-400">16/06/2023</h6>
             </div>
           </div>
         </div>
