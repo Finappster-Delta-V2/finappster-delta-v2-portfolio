@@ -112,13 +112,14 @@ const App = () => {
                 S T U D E N T
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Sed amet mauris arcu in.
-                Nam nisl porttitor id diam id dolor mauris cursus faucibus. Enim
-                bibendum lacinia cursus lacus mauris neque consequat facilisi.
-                Luctus integer felis lacinia diam rutrum egestas phasellus elit.
-                Nec tristique facilisis aliquam penatibus consequat fermentum
-                lacus eu. Risus posuere lectus magna sed eu dictum consequat
-                velit. Vestibulum magna id est sollicitudin
+                I am a software development student with a passion for exploring
+                with the latest bleeding edge technologies. My favorite language
+                is Go, and I enjoy working with the T3 Stack. During my free
+                time, I find inspiration from Primeagen and Theo's (T3) YouTube
+                videos, as I am deeply enthusiastic about coding. Currently, my
+                focus is on learning about interpreters and compilers in Go,
+                with the intention of contributing to the Turbopack bundler, an
+                open source software developed by Vercel.
               </p>
               <h6 className="self-end text-gray-400">16/06/2023</h6>
             </div>
