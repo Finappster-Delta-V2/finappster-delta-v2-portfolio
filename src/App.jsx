@@ -1,6 +1,6 @@
 import { ArtifactSection } from "./components/ArtifactSection";
 
-// images
+// Images
 import Dv2Logo from "./assets/dv2-logo.svg";
 import TeamPhoto from "./assets/image/team-photo.png";
 
@@ -138,15 +138,18 @@ const App = () => {
                 </h3>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Sed amet mauris arcu in.
-                Nam nisl porttitor id diam id dolor mauris cursus faucibus. Enim
-                bibendum lacinia cursus lacus mauris neque consequat facilisi.
-                Luctus integer felis lacinia diam rutrum egestas phasellus elit.
-                Nec tristique facilisis aliquam penatibus consequat fermentum
-                lacus eu. Risus posuere lectus magna sed eu dictum consequat
-                velit. Vestibulum magna id est sollicitudin
+                As an AUT computer science student majoring in software
+                development, I find immense joy in coding and staying up-to-date
+                with the latest tech news and tools. While I have a particular
+                affinity for front-end development, I am continuously expanding
+                my skills in backend development as well. Currently, I am
+                proficient in Angular and actively learning React to broaden my
+                knowledge and expertise. With a passion for programming and a
+                thirst for learning, I am excited to embark on a journey of
+                continuous growth and exploration in the dynamic world of
+                software development.
               </p>
-              <h6 className="mt-4 self-end text-gray-400">16/06/2023</h6>
+              <h6 className="mt-4 self-end text-gray-400">17/06/2023</h6>
             </div>
 
             {/* Renjo */}
@@ -184,13 +187,15 @@ const App = () => {
                 </h3>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Sed amet mauris arcu in.
-                Nam nisl porttitor id diam id dolor mauris cursus faucibus. Enim
-                bibendum lacinia cursus lacus mauris neque consequat facilisi.
-                Luctus integer felis lacinia diam rutrum egestas phasellus elit.
-                Nec tristique facilisis aliquam penatibus consequat fermentum
-                lacus eu. Risus posuere lectus magna sed eu dictum consequat
-                velit. Vestibulum magna id est sollicitudin
+                I am a passionate and lifelong learner who enjoys exploring and
+                experimenting with different coding languages. I am always
+                up-to-date with the latest developments in the tech industry and
+                I am always looking for new and innovative ways to solve
+                problems. I am open to collaboration and excited to work on new
+                projects with other programmers. I am particularly interested in
+                creating unique and user-friendly software solutions that make
+                people's lives easier and more enjoyable. I am committed to
+                using my skills to make a positive impact on the world.
               </p>
               <h6 className="mt-4 self-end text-gray-400">16/06/2023</h6>
             </div>
@@ -203,7 +208,7 @@ const App = () => {
       {/* More about project */}
       <div className="flex flex-col items-center justify-center">
         <h1 className="mb-4 text-5xl font-bold">
-          Want to know more about out project?
+          Want to know more about our project?
         </h1>
         <h1 className="mb-24 text-5xl font-bold text-primary">
           View the Full Project Portfolio
