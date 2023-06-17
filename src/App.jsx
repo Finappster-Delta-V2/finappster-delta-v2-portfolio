@@ -102,13 +102,13 @@ const App = () => {
           Meet the Team
         </h1>
 
-        <div className="flex flex-col items-center  px-10 py-10 md:px-32">
+        <div className="flex flex-col items-center py-10 md:px-10 md:px-32">
           <div className="relative grid w-full grid-cols-1 grid-rows-3 gap-x-20 text-black xl:grid-cols-2">
             <div className="invisible absolute left-1/2 h-full w-2 -translate-x-1/2 transform bg-white xl:visible"></div>
 
             {/* Peter */}
             <div className="relative row-start-1 mb-24 flex w-full flex-col items-center bg-white p-10  lg:p-14 xl:col-start-1 xl:w-[30rem] xl:justify-self-end">
-              <div className="overflow-hidden  rounded-full object-cover">
+              <div className="overflow-hidden rounded-full object-cover">
                 <img className="w-56" src={PeterPhoto} alt="Peter An" />
               </div>
               <div className="my-5">
@@ -132,7 +132,7 @@ const App = () => {
 
             {/* Christopher */}
             <div className="relative row-start-2 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-2 xl:w-[30rem]">
-              <div className="overflow-hidden  rounded-full object-cover">
+              <div className="overflow-hidden rounded-full object-cover">
                 <img className="w-56" src={ChrisPhoto} alt="Christopher Li" />
               </div>
               <div className="my-5">
@@ -201,7 +201,7 @@ const App = () => {
                 people's lives easier and more enjoyable. I am committed to
                 using my skills to make a positive impact on the world.
               </p>
-              <h6 className="mt-4 self-end text-gray-400">16/06/2023</h6>
+              <h6 className="mt-4 self-end text-gray-400">17/06/2023</h6>
             </div>
           </div>
         </div>
