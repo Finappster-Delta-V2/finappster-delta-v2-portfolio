@@ -2,7 +2,7 @@ import { ArtifactSection } from "./components/ArtifactSection";
 
 // Images
 import Dv2Logo from "./assets/dv2-logo.svg";
-import TeamPhoto from "./assets/image/team-photo.png";
+import TeamPhoto from "./assets/image/team-photo.jpg";
 
 import TauVideo from "./assets/video/Tau.gif";
 import ZetaVideo from "./assets/video/Zeta.gif";
