@@ -1,3 +1,4 @@
+import image from "../public/assets/image/team-photo.png";
 import { ArtifactSection } from "./components/ArtifactSection";
 
 const App = () => {
