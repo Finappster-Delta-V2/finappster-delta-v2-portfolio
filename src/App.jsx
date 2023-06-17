@@ -4,8 +4,8 @@ import { ArtifactSection } from "./components/ArtifactSection";
 import Dv2Logo from "./assets/dv2-logo.svg";
 import TeamPhoto from "./assets/image/team-photo.png";
 
-import TauVideo from "./assets/video/Tau.mp4";
-import ZetaVideo from "./assets/video/Zeta.mp4";
+import TauVideo from "./assets/video/Tau.gif";
+import ZetaVideo from "./assets/video/Zeta.gif";
 import FinappsterArchitectureDiagram from "./assets/documents/Finappster_Research_Architecture_Diagram.png";
 
 import Poster from "./assets/documents/poster_v3.1.png";
@@ -58,7 +58,11 @@ const App = () => {
         </p>
 
         <div className="mt-56 flex flex-col gap-56">
-          <ArtifactSection title="Tau Admin Panel" videoUrl={TauVideo}>
+          <ArtifactSection
+            title="Tau Admin Panel"
+            imageUrl={TauVideo}
+            imageAlt="Tau Admin Panel"
+          >
             Enables companies to create customized questionnaires, visualize
             data through graphs, and easily search and retrieve customer data
             from multiple companies.
@@ -66,7 +70,8 @@ const App = () => {
 
           <ArtifactSection
             title="Zeta Form Builder"
-            videoUrl={ZetaVideo}
+            imageUrl={ZetaVideo}
+            imageAlt="Zeta Form Builder"
             side="right"
           >
             Create customized questionnaires using the form builders feature.
@@ -102,12 +107,12 @@ const App = () => {
           Meet the Team
         </h1>
 
-        <div className="flex flex-col items-center py-10 md:px-10 md:px-32">
+        <div className="flex flex-col items-center py-10 md:px-10">
           <div className="relative grid w-full grid-cols-1 grid-rows-3 gap-x-20 text-black xl:grid-cols-2">
             <div className="invisible absolute left-1/2 h-full w-2 -translate-x-1/2 transform bg-white xl:visible"></div>
 
             {/* Peter */}
-            <div className="relative row-start-1 mb-24 flex w-full flex-col items-center bg-white p-10  lg:p-14 xl:col-start-1 xl:w-[30rem] xl:justify-self-end">
+            <div className="relative row-start-1 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-1 xl:w-[30rem] xl:justify-self-end">
               <div className="overflow-hidden rounded-full object-cover">
                 <img className="w-56" src={PeterPhoto} alt="Peter An" />
               </div>
