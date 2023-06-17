@@ -10,6 +10,7 @@ import TauVideo from "./assets/video/Tau.gif";
 import ZetaVideo from "./assets/video/Zeta.gif";
 import FinappsterArchitectureDiagram from "./assets/documents/Finappster_Research_Architecture_Diagram.png";
 
+import PosterMinified from "./assets/documents/poster_v3.1_min.jpg";
 import Poster from "./assets/documents/poster_v3.1.png";
 
 import PeterPhoto from "./assets/image/peter.jpg";
@@ -98,7 +99,23 @@ const App = () => {
       {/* Poster */}
       <div>
         <h1 className="mb-24 w-full text-center text-5xl font-bold">Poster</h1>
-        <img className="mb-8" src={Poster} alt="Finappster Delta v2 Poster" />
+
+        <div className="flex justify-end">
+          <a
+            className="inline gap-2 text-right hover:text-primary"
+            href={Poster}
+            target="_blank"
+          >
+            Open image in new tab
+            <ImNewTab className="ml-1 inline" />
+          </a>
+        </div>
+
+        <img
+          className="mb-8"
+          src={PosterMinified}
+          alt="Finappster Delta v2 Poster"
+        />
       </div>
 
       <div className="h-56 w-full"></div>
