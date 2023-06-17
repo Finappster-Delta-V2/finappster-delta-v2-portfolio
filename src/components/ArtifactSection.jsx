@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export const ArtifactSection = ({
   children,
   title,
@@ -58,7 +60,13 @@ export const ArtifactSection = ({
   }
 
   return (
-    <div className="flex flex-col items-end justify-between gap-12 md:flex-row">
+    <motion.div
+      className="flex flex-col items-end justify-between gap-12 md:flex-row"
+      initial={{ opacity: 0, y: "50%" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+    >
       {leftContent}
 
       <div className={side === "left" ? "text-right" : "text-left"}>
@@ -67,6 +75,6 @@ export const ArtifactSection = ({
       </div>
 
       {rightContent}
-    </div>
+    </motion.div>
   );
 };
