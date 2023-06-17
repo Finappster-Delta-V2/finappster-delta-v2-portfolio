@@ -5,9 +5,7 @@ import Dv2Logo from "./assets/dv2-logo.svg";
 import TeamPhoto from "./assets/image/team-photo.png";
 
 import TauVideo from "./assets/video/Tau.gif";
-// import TauPreview from "./assets/video/TauPreview.jpg";
-import ZetaVideo from "./assets/video/Zeta.mp4";
-import ZetaPreview from "./assets/video/ZetaPreview.jpg";
+import ZetaVideo from "./assets/video/Zeta.gif";
 import FinappsterArchitectureDiagram from "./assets/documents/Finappster_Research_Architecture_Diagram.png";
 
 import Poster from "./assets/documents/poster_v3.1.png";
@@ -72,8 +70,8 @@ const App = () => {
 
           <ArtifactSection
             title="Zeta Form Builder"
-            videoUrl={ZetaVideo}
-            videoPreviewUrl={ZetaPreview}
+            imageUrl={ZetaVideo}
+            imageAlt="Zeta Form Builder"
             side="right"
           >
             Create customized questionnaires using the form builders feature.
