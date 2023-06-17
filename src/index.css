@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "ADELIA";
+  src: url("https://fonts.adobe.com/fonts/nagel-variable");
+}
+
 body {
   @apply bg-black;
 }

@@ -1,3 +1,5 @@
+import { ImNewTab } from "react-icons/im";
+
 import { ArtifactSection } from "./components/ArtifactSection";
 
 // Images
@@ -215,7 +217,7 @@ const App = () => {
       <div className="h-56 w-full"></div>
 
       {/* More about project */}
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center text-center">
         <h1 className="mb-4 text-5xl font-bold">
           Want to know more about our project?
         </h1>
@@ -223,11 +225,12 @@ const App = () => {
           View the Full Project Portfolio
         </h1>
         <a
-          className="flex cursor-pointer items-center rounded-xl py-3 px-6 outline outline-4 outline-primary transition-transform ease-in-out hover:scale-110"
+          className="flex cursor-pointer items-start rounded-xl py-3 px-6 outline outline-4 outline-primary transition-transform ease-in-out hover:scale-110"
           target="_blank"
           href="https://autuni-my.sharepoint.com/:f:/g/personal/ykx5915_autuni_ac_nz/Ev97DvZQNblGo5Bfcas3v_8BX-lc4b3cZ0hnM8Bz4bI-4g?e=AeEGg1"
         >
           <span className="text-3xl font-bold text-primary">OneDrive Link</span>
+          <ImNewTab className="ml-2 text-primary" size={20} />
         </a>
       </div>
 
