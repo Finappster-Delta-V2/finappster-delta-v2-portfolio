@@ -242,7 +242,7 @@ const App = () => {
           View the Full Project Portfolio
         </h1>
         <a
-          className="flex cursor-pointer items-start rounded-xl py-3 px-6 outline outline-4 outline-primary transition-transform ease-in-out hover:scale-110"
+          className="flex cursor-pointer items-start rounded-xl px-6 pt-3 pb-1 outline outline-4 outline-primary transition-transform ease-in-out hover:scale-110"
           target="_blank"
           href="https://autuni-my.sharepoint.com/:f:/g/personal/ykx5915_autuni_ac_nz/Ev97DvZQNblGo5Bfcas3v_8BX-lc4b3cZ0hnM8Bz4bI-4g?e=AeEGg1"
         >
