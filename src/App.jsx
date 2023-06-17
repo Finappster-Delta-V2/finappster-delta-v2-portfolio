@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { motion } from "framer-motion";
 import { ImNewTab } from "react-icons/im";
 
 import { ArtifactSection } from "./components/ArtifactSection";
@@ -19,18 +21,28 @@ import RenjoPhoto from "./assets/image/renjo.jpg";
 import JamesonPhoto from "./assets/image/jameson.jpg";
 
 const App = () => {
+  let isMobile = window.innerWidth > 768;
+
   return (
     <main className="mx-4 text-white md:mx-24 lg:mx-32 xl:mx-56">
       {/* Logo */}
-      <img
+      <motion.img
         src={Dv2Logo}
         alt="finappster Delta v2 logo"
         className="absolute top-6 left-4 w-16 md:top-8 md:left-12 md:w-32"
+        initial={{ opacity: 0, x: "-50%" }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 2 }}
       />
 
       {/* Intro Section */}
       <div className="mt-4 flex h-screen flex-col-reverse items-center justify-center gap-2 md:mt-0 md:flex-row md:justify-between md:gap-0">
-        <div className="w-full md:w-1/3 lg:w-1/2">
+        <motion.div
+          className="w-full md:w-1/3 lg:w-1/2"
+          initial={{ opacity: 0, y: "50%" }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
           <h1 className="mb-2 text-3xl font-bold">finappster</h1>
           <h1 className="text-7xl font-bold">Delta v2</h1>
           <h2 className="text-3xl font-bold">
@@ -41,12 +53,17 @@ const App = () => {
           </h3>
           <h3 className="mb-8 text-2xl font-bold text-primary">2022-2023</h3>
           <div className="mr-5 h-1 w-4/5 bg-white" />
-        </div>
+        </motion.div>
 
-        <img
+        <motion.img
           className="w-full md:w-1/2 lg:w-1/2"
           src={TeamPhoto}
           alt="Delta v2 team photo"
+          initial={
+            isMobile ? { opacity: 0, y: "50%" } : { opacity: 0, y: "-50%" }
+          }
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, delay: 0.5 }}
         />
       </div>
 
@@ -54,11 +71,24 @@ const App = () => {
 
       {/* Artifacts */}
       <div>
-        <h1 className="mb-8 text-5xl font-bold">Artifacts</h1>
-        <p className="text-lg lg:w-1/2">
-          We integrated the following two features in the finappster main
-          application and additionally created internal technical documentation.
-        </p>
+        <motion.div
+          initial={{ opacity: 0, x: "-50%" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            damping: 40,
+            stiffness: 200,
+            delay: 0.2,
+          }}
+        >
+          <h1 className="mb-8 text-5xl font-bold">Artifacts</h1>
+          <p className="text-lg lg:w-1/2">
+            We integrated the following two features in the finappster main
+            application and additionally created internal technical
+            documentation.
+          </p>
+        </motion.div>
 
         <div className="mt-56 flex flex-col gap-56">
           <ArtifactSection
@@ -97,8 +127,13 @@ const App = () => {
       <div className="h-56 w-full"></div>
 
       {/* Poster */}
-      <div>
-        <h1 className="mb-24 w-full text-center text-5xl font-bold">Poster</h1>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
+        <h1 className="mb-8 w-full text-center text-5xl font-bold">Poster</h1>
 
         <div className="flex justify-end">
           <a
@@ -116,22 +151,34 @@ const App = () => {
           src={PosterMinified}
           alt="Finappster Delta v2 Poster"
         />
-      </div>
+      </motion.div>
 
       <div className="h-56 w-full"></div>
 
       {/* Meet the Team */}
       <div>
-        <h1 className="mb-24 w-full text-center text-5xl font-bold">
+        <motion.h1
+          className="mb-24 w-full text-center text-5xl font-bold"
+          initial={{ opacity: 0, y: "100%" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
           Meet the Team
-        </h1>
+        </motion.h1>
 
         <div className="flex flex-col items-center py-10 md:px-10">
           <div className="relative grid w-full grid-cols-1 grid-rows-3 gap-x-20 text-black xl:grid-cols-2">
             <div className="invisible absolute left-1/2 h-full w-2 -translate-x-1/2 transform bg-white xl:visible"></div>
 
             {/* Peter */}
-            <div className="relative row-start-1 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-1 xl:w-[30rem] xl:justify-self-end">
+            <motion.div
+              className="relative row-start-1 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-1 xl:w-[30rem] xl:justify-self-end"
+              initial={{ opacity: 0, x: "-50%" }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+            >
               <div className="overflow-hidden rounded-full object-cover">
                 <img className="w-56" src={PeterPhoto} alt="Peter An" />
               </div>
@@ -152,10 +199,16 @@ const App = () => {
                 open source software developed by Vercel.
               </p>
               <h6 className="mt-4 self-end text-gray-400">16/06/2023</h6>
-            </div>
+            </motion.div>
 
             {/* Christopher */}
-            <div className="relative row-start-2 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-2 xl:w-[30rem]">
+            <motion.div
+              className="relative row-start-2 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-2 xl:w-[30rem]"
+              initial={{ opacity: 0, x: "50%" }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+            >
               <div className="overflow-hidden rounded-full object-cover">
                 <img className="w-56" src={ChrisPhoto} alt="Christopher Li" />
               </div>
@@ -178,10 +231,16 @@ const App = () => {
                 software development.
               </p>
               <h6 className="mt-4 self-end text-gray-400">17/06/2023</h6>
-            </div>
+            </motion.div>
 
             {/* Renjo */}
-            <div className="relative row-start-3 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-1 xl:w-[30rem] xl:justify-self-end">
+            <motion.div
+              className="relative row-start-3 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-1 xl:w-[30rem] xl:justify-self-end"
+              initial={{ opacity: 0, x: "-50%" }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+            >
               <div className="overflow-hidden  rounded-full object-cover">
                 <img className="w-56" src={RenjoPhoto} alt="Renjo Angeles" />
               </div>
@@ -201,10 +260,16 @@ const App = () => {
                 velit. Vestibulum magna id est sollicitudin
               </p>
               <h6 className="mt-4 self-end text-gray-400">16/06/2023</h6>
-            </div>
+            </motion.div>
 
             {/* Jameson */}
-            <div className="relative row-start-4 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-2 xl:w-[30rem]">
+            <motion.div
+              className="relative row-start-4 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-2 xl:w-[30rem]"
+              initial={{ opacity: 0, x: "50%" }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+            >
               <div className="overflow-hidden  rounded-full object-cover">
                 <img className="w-56" src={JamesonPhoto} alt="Jameson Yeo" />
               </div>
@@ -226,7 +291,7 @@ const App = () => {
                 using my skills to make a positive impact on the world.
               </p>
               <h6 className="mt-4 self-end text-gray-400">17/06/2023</h6>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -234,22 +299,32 @@ const App = () => {
       <div className="h-56 w-full"></div>
 
       {/* More about project */}
-      <div className="flex flex-col items-center justify-center text-center">
+      <motion.div
+        className="flex flex-col items-center justify-center text-center"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
         <h1 className="mb-4 text-5xl font-bold">
           Want to learn more about our project?
         </h1>
         <h1 className="mb-24 text-5xl font-bold text-primary">
           View the Full Project Portfolio
         </h1>
-        <a
+        <motion.a
           className="flex cursor-pointer items-start rounded-xl px-6 pt-3 pb-1 outline outline-4 outline-primary transition-transform ease-in-out hover:scale-110"
           target="_blank"
           href="https://autuni-my.sharepoint.com/:f:/g/personal/ykx5915_autuni_ac_nz/Ev97DvZQNblGo5Bfcas3v_8BX-lc4b3cZ0hnM8Bz4bI-4g?e=AeEGg1"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 2 }}
         >
           <span className="text-3xl font-bold text-primary">OneDrive Link</span>
           <ImNewTab className="ml-2 text-primary" size={20} />
-        </a>
-      </div>
+        </motion.a>
+      </motion.div>
 
       <div className="h-56 w-full"></div>
     </main>
