@@ -1,11 +1,25 @@
-import image from "../public/assets/image/team-photo.png";
 import { ArtifactSection } from "./components/ArtifactSection";
+
+// images
+import Dv2Logo from "./assets/dv2-logo.svg";
+import TeamPhoto from "./assets/image/team-photo.png";
+
+import TauVideo from "./assets/video/Tau.mp4";
+import ZetaVideo from "./assets/video/Zeta.mp4";
+import FinappsterArchitectureDiagram from "./assets/documents/Finappster_Research_Architecture_Diagram.png";
+
+import Poster from "./assets/documents/poster_v3.1.png";
+
+import PeterPhoto from "./assets/image/peter.jpg";
+import ChrisPhoto from "./assets/image/chris.jpg";
+import RenjoPhoto from "./assets/image/renjo.jpg";
+import JamesonPhoto from "./assets/image/jameson.jpg";
 
 const App = () => {
   return (
     <main className="mx-56 text-white">
       <img
-        src="/public/dv2-logo.svg"
+        src={Dv2Logo}
         alt="finappster Delta v2 logo"
         className="absolute top-8 left-12 w-32"
       />
@@ -26,11 +40,7 @@ const App = () => {
           <div className="mr-5 h-1 w-4/5 bg-white" />
         </div>
 
-        <img
-          className="w-1/2"
-          src="/public/assets/image/team-photo.png"
-          alt="Delta v2 team photo"
-        />
+        <img className="w-1/2" src={TeamPhoto} alt="Delta v2 team photo" />
       </div>
 
       <div className="h-12 w-full" />
@@ -44,10 +54,7 @@ const App = () => {
         </p>
 
         <div className="mt-56 flex flex-col gap-56">
-          <ArtifactSection
-            title="Tau Admin Panel"
-            videoUrl="/public/assets/video/Tau.mp4"
-          >
+          <ArtifactSection title="Tau Admin Panel" videoUrl={TauVideo}>
             Enables companies to create customized questionnaires, visualize
             data through graphs, and easily search and retrieve customer data
             from multiple companies.
@@ -55,7 +62,7 @@ const App = () => {
 
           <ArtifactSection
             title="Zeta Form Builder"
-            videoUrl="/public/assets/video/Zeta.mp4"
+            videoUrl={ZetaVideo}
             side="right"
           >
             Create customized questionnaires using the form builders feature.
@@ -65,7 +72,7 @@ const App = () => {
 
           <ArtifactSection
             title="Finappster Architecture"
-            imageUrl="/public/assets/documents/Finappster_Research_Architecture_Diagram.png"
+            imageUrl={FinappsterArchitectureDiagram}
             imageAlt="Finappster Research Architecture Diagram"
           >
             Visual representation of the current finappster microservice
@@ -80,11 +87,7 @@ const App = () => {
       {/* Poster */}
       <div>
         <h1 className="mb-24 w-full text-center text-5xl font-bold">Poster</h1>
-        <img
-          className="mb-8"
-          src="/public/assets/documents/poster_v3.1.png"
-          alt="Finappster Delta v2 Poster"
-        />
+        <img className="mb-8" src={Poster} alt="Finappster Delta v2 Poster" />
       </div>
 
       <div className="h-56 w-full"></div>
@@ -102,11 +105,7 @@ const App = () => {
             {/* Peter */}
             <div className="relative row-start-1 mb-24 flex w-full flex-col items-center bg-white p-10  lg:p-14 xl:col-start-1 xl:w-[30rem] xl:justify-self-end">
               <div className="overflow-hidden  rounded-full object-cover">
-                <img
-                  className="w-56"
-                  src="/public/assets/image/peter.jpg"
-                  alt="Peter An"
-                />
+                <img className="w-56" src={PeterPhoto} alt="Peter An" />
               </div>
               <div className="my-5">
                 <h1 className="text-4xl font-bold">Peter An</h1>
@@ -130,11 +129,7 @@ const App = () => {
             {/* Christopher */}
             <div className="relative row-start-2 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-2 xl:w-[30rem]">
               <div className="overflow-hidden  rounded-full object-cover">
-                <img
-                  className="w-56"
-                  src="/public/assets/image/chris.jpg"
-                  alt="Christopher Li"
-                />
+                <img className="w-56" src={ChrisPhoto} alt="Christopher Li" />
               </div>
               <div className="my-5">
                 <h1 className="text-4xl font-bold">Christopher Li</h1>
@@ -157,11 +152,7 @@ const App = () => {
             {/* Renjo */}
             <div className="relative row-start-3 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-1 xl:w-[30rem] xl:justify-self-end">
               <div className="overflow-hidden  rounded-full object-cover">
-                <img
-                  className="w-56"
-                  src="/public/assets/image/renjo.jpg"
-                  alt="Renjo Angeles"
-                />
+                <img className="w-56" src={RenjoPhoto} alt="Renjo Angeles" />
               </div>
               <div className="my-5">
                 <h1 className="text-4xl font-bold">Renjo Angeles</h1>
@@ -184,11 +175,7 @@ const App = () => {
             {/* Jameson */}
             <div className="relative row-start-4 mb-24 flex w-full flex-col items-center bg-white p-10 lg:p-14 xl:col-start-2 xl:w-[30rem]">
               <div className="overflow-hidden  rounded-full object-cover">
-                <img
-                  className="w-56"
-                  src="/public/assets/image/jameson.jpg"
-                  alt="Jameson Yeo"
-                />
+                <img className="w-56" src={JamesonPhoto} alt="Jameson Yeo" />
               </div>
               <div className="my-5">
                 <h1 className="text-4xl font-bold">Jameson Yeo</h1>
