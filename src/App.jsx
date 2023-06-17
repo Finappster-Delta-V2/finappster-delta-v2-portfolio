@@ -63,7 +63,7 @@ const App = () => {
             isMobile ? { opacity: 0, y: "50%" } : { opacity: 0, y: "-50%" }
           }
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, delay: 0.5 }}
+          transition={{ duration: 2, delay: 1 }}
         />
       </div>
 
