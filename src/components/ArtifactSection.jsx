@@ -2,7 +2,7 @@ export const ArtifactSection = ({
   children,
   title,
   videoUrl,
-  videoPreviewUrl
+  videoPreviewUrl,
   imageUrl,
   imageAlt,
   side = "left",
@@ -16,7 +16,14 @@ export const ArtifactSection = ({
   if (side === "left") {
     if (videoUrl) {
       leftContent = (
-        <video className={leftContentClass} poster={videoPreviewUrl} preload="auto" loop autoPlay muted>
+        <video
+          className={leftContentClass}
+          poster={videoPreviewUrl}
+          preload="auto"
+          loop
+          autoPlay
+          muted
+        >
           <source src={videoUrl} type="video/mp4" />
         </video>
       );
@@ -31,7 +38,14 @@ export const ArtifactSection = ({
   if (side === "right") {
     if (videoUrl) {
       rightContent = (
-        <video className={rightContentClass} poster={videoPreviewUrl} preload="auto" loop autoPlay muted>
+        <video
+          className={rightContentClass}
+          poster={videoPreviewUrl}
+          preload="auto"
+          loop
+          autoPlay
+          muted
+        >
           <source src={videoUrl} type="video/mp4" />
         </video>
       );
