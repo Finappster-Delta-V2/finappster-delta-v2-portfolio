@@ -251,15 +251,14 @@ const App = () => {
                 </h3>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Sed amet mauris arcu in.
-                Nam nisl porttitor id diam id dolor mauris cursus faucibus. Enim
-                bibendum lacinia cursus lacus mauris neque consequat facilisi.
-                Luctus integer felis lacinia diam rutrum egestas phasellus elit.
-                Nec tristique facilisis aliquam penatibus consequat fermentum
-                lacus eu. Risus posuere lectus magna sed eu dictum consequat
-                velit. Vestibulum magna id est sollicitudin
+                I'm a BCIS student majoring in software development and aspiring
+                web developer. Passionate about crafting user-friendly websites,
+                I'm eager to learn and stay up-to-date with the latest
+                technologies. With a strong desire for innovation, I strive to
+                create impactful web solutions by combining my technical
+                knowledge, creativity, and problem-solving abilities.
               </p>
-              <h6 className="mt-4 self-end text-gray-400">16/06/2023</h6>
+              <h6 className="mt-4 self-end text-gray-400">17/06/2023</h6>
             </motion.div>
 
             {/* Jameson */}
