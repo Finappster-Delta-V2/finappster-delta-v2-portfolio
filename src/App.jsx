@@ -4,8 +4,8 @@ import { ArtifactSection } from "./components/ArtifactSection";
 import Dv2Logo from "./assets/dv2-logo.svg";
 import TeamPhoto from "./assets/image/team-photo.png";
 
-import TauVideo from "./assets/video/Tau.mp4";
-import TauPreview from "./assets/video/TauPreview.jpg";
+import TauVideo from "./assets/video/Tau.gif";
+// import TauPreview from "./assets/video/TauPreview.jpg";
 import ZetaVideo from "./assets/video/Zeta.mp4";
 import ZetaPreview from "./assets/video/ZetaPreview.jpg";
 import FinappsterArchitectureDiagram from "./assets/documents/Finappster_Research_Architecture_Diagram.png";
@@ -62,8 +62,8 @@ const App = () => {
         <div className="mt-56 flex flex-col gap-56">
           <ArtifactSection
             title="Tau Admin Panel"
-            videoUrl={TauVideo}
-            videoPreviewUrl={TauPreview}
+            imageUrl={TauVideo}
+            imageAlt="Tau Admin Panel"
           >
             Enables companies to create customized questionnaires, visualize
             data through graphs, and easily search and retrieve customer data
