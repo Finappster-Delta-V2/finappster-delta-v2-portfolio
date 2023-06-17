@@ -5,7 +5,9 @@ import Dv2Logo from "./assets/dv2-logo.svg";
 import TeamPhoto from "./assets/image/team-photo.png";
 
 import TauVideo from "./assets/video/Tau.mp4";
+import TauPreview from "./assets/video/TauPreview.jpg";
 import ZetaVideo from "./assets/video/Zeta.mp4";
+import ZetaPreview from "./assets/video/ZetaPreview.jpg";
 import FinappsterArchitectureDiagram from "./assets/documents/Finappster_Research_Architecture_Diagram.png";
 
 import Poster from "./assets/documents/poster_v3.1.png";
@@ -58,7 +60,11 @@ const App = () => {
         </p>
 
         <div className="mt-56 flex flex-col gap-56">
-          <ArtifactSection title="Tau Admin Panel" videoUrl={TauVideo}>
+          <ArtifactSection
+            title="Tau Admin Panel"
+            videoUrl={TauVideo}
+            videoPreviewUrl={TauPreview}
+          >
             Enables companies to create customized questionnaires, visualize
             data through graphs, and easily search and retrieve customer data
             from multiple companies.
@@ -67,6 +73,7 @@ const App = () => {
           <ArtifactSection
             title="Zeta Form Builder"
             videoUrl={ZetaVideo}
+            videoPreviewUrl={ZetaPreview}
             side="right"
           >
             Create customized questionnaires using the form builders feature.
