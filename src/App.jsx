@@ -17,19 +17,19 @@ import JamesonPhoto from "./assets/image/jameson.jpg";
 
 const App = () => {
   return (
-    <main className="mx-56 text-white">
+    <main className="mx-4 text-white md:mx-24 lg:mx-32 xl:mx-56">
+      {/* Logo */}
       <img
         src={Dv2Logo}
         alt="finappster Delta v2 logo"
-        className="absolute top-8 left-12 w-32"
+        className="absolute top-6 left-4 w-16 md:top-8 md:left-12 md:w-32"
       />
-      {/* Logo */}
 
       {/* Intro Section */}
-      <div className="flex h-screen items-center justify-between">
-        <div className="w-1/2">
+      <div className="mt-4 flex h-screen flex-col-reverse items-center justify-center gap-2 md:mt-0 md:flex-row md:justify-between md:gap-0">
+        <div className="w-full md:w-1/3 lg:w-1/2">
           <h1 className="mb-2 text-3xl font-bold">finappster</h1>
-          <h1 className="text-8xl font-bold">Delta v2</h1>
+          <h1 className="text-7xl font-bold">Delta v2</h1>
           <h2 className="text-3xl font-bold">
             Welcome to our showcase website.
           </h2>
@@ -40,7 +40,11 @@ const App = () => {
           <div className="mr-5 h-1 w-4/5 bg-white" />
         </div>
 
-        <img className="w-1/2" src={TeamPhoto} alt="Delta v2 team photo" />
+        <img
+          className="w-full md:w-1/2 lg:w-1/2"
+          src={TeamPhoto}
+          alt="Delta v2 team photo"
+        />
       </div>
 
       <div className="h-12 w-full" />
@@ -48,7 +52,7 @@ const App = () => {
       {/* Artifacts */}
       <div>
         <h1 className="mb-8 text-5xl font-bold">Artifacts</h1>
-        <p className="w-1/2 text-lg">
+        <p className="text-lg lg:w-1/2">
           We integrated the following two features in the finappster main
           application and additionally created internal technical documentation.
         </p>
