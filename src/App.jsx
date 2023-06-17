@@ -1,13 +1,16 @@
+import { ImNewTab } from "react-icons/im";
+
 import { ArtifactSection } from "./components/ArtifactSection";
 
 // Images
 import Dv2Logo from "./assets/dv2-logo.svg";
-import TeamPhoto from "./assets/image/team-photo.png";
+import TeamPhoto from "./assets/image/team-photo.jpg";
 
 import TauVideo from "./assets/video/Tau.gif";
 import ZetaVideo from "./assets/video/Zeta.gif";
 import FinappsterArchitectureDiagram from "./assets/documents/Finappster_Research_Architecture_Diagram.png";
 
+import PosterMinified from "./assets/documents/poster_v3.1_min.jpg";
 import Poster from "./assets/documents/poster_v3.1.png";
 
 import PeterPhoto from "./assets/image/peter.jpg";
@@ -96,7 +99,23 @@ const App = () => {
       {/* Poster */}
       <div>
         <h1 className="mb-24 w-full text-center text-5xl font-bold">Poster</h1>
-        <img className="mb-8" src={Poster} alt="Finappster Delta v2 Poster" />
+
+        <div className="flex justify-end">
+          <a
+            className="inline gap-2 text-right hover:text-primary"
+            href={Poster}
+            target="_blank"
+          >
+            Open image in new tab
+            <ImNewTab className="ml-1 inline" />
+          </a>
+        </div>
+
+        <img
+          className="mb-8"
+          src={PosterMinified}
+          alt="Finappster Delta v2 Poster"
+        />
       </div>
 
       <div className="h-56 w-full"></div>
@@ -215,19 +234,20 @@ const App = () => {
       <div className="h-56 w-full"></div>
 
       {/* More about project */}
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center text-center">
         <h1 className="mb-4 text-5xl font-bold">
-          Want to know more about our project?
+          Want to learn more about our project?
         </h1>
         <h1 className="mb-24 text-5xl font-bold text-primary">
           View the Full Project Portfolio
         </h1>
         <a
-          className="flex cursor-pointer items-center rounded-xl py-3 px-6 outline outline-4 outline-primary transition-transform ease-in-out hover:scale-110"
+          className="flex cursor-pointer items-start rounded-xl px-6 pt-3 pb-1 outline outline-4 outline-primary transition-transform ease-in-out hover:scale-110"
           target="_blank"
           href="https://autuni-my.sharepoint.com/:f:/g/personal/ykx5915_autuni_ac_nz/Ev97DvZQNblGo5Bfcas3v_8BX-lc4b3cZ0hnM8Bz4bI-4g?e=AeEGg1"
         >
           <span className="text-3xl font-bold text-primary">OneDrive Link</span>
+          <ImNewTab className="ml-2 text-primary" size={20} />
         </a>
       </div>
 

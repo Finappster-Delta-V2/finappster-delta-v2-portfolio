@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Nagel VF", "sans-serif"],
+        sans: ["nagel-variable", "sans-serif"],
       },
       colors: {
         primary: "#BE1E2D",
