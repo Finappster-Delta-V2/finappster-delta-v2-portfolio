@@ -219,7 +219,7 @@ const App = () => {
       {/* More about project */}
       <div className="flex flex-col items-center justify-center text-center">
         <h1 className="mb-4 text-5xl font-bold">
-          Want to know more about our project?
+          Want to learn more about our project?
         </h1>
         <h1 className="mb-24 text-5xl font-bold text-primary">
           View the Full Project Portfolio
